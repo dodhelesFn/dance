@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{QUERY_STRING} !(og:url)
+RewriteRule ^(.*)$ /index.php?og=url=$1 [L]
