@@ -1,53 +1,53 @@
-.background-video {
- position: relative;
- width: 100%;
- height: 100vh;
- overflow: hidden;
- background-size: cover;
+body {
+    padding: 0px;
+    margin: 0px;
 }
 
-.background-video video {
- position: absolute;
- top: 0;
- left: 0;
- width: 100%;
- height: 100%;
- object-fit: cover;
+header {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+  
+header video {
+position: absolute;
+top: 50%;
+left: 50%;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: 0;
+-ms-transform: translateX(-50%) translateY(-50%);
+-moz-transform: translateX(-50%) translateY(-50%);
+-webkit-transform: translateX(-50%) translateY(-50%);
+transform: translateX(-50%) translateY(-50%);
+}
+  
+header .container {
+position: relative;
+z-index: 2;
 }
 
-.linkbio-container {
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
- text-align: center;
+header .overlay {
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+background-color: black;
+opacity: 0.5;
+z-index: 1;
 }
 
-.linkbio-container h1 {
- font-size: 36px;
- font-weight: bold;
- color: #fff;
+.btn {
+    border-radius: 30px;
 }
-
-.linkbio-container ul {
- list-style: none;
- padding: 0;
- margin: 0;
-}
-
-.linkbio-container li {
- margin-bottom: 20px;
-}
-
-.linkbio-container .link {
- text-decoration: none;
- color: #fff;
- font-size: 30px;
- border-bottom: 1px solid #fff;
- transition: all 0.3s ease;
-}
-
-.linkbio-container .link:hover {
- color: #ccc;
- border-bottom-color: #ccc;
+.win, .win:hover {
+    background-color: #df1111;
+    border: 3px solid #fff;
+    box-shadow: 1px 1px 5px rgba(71, 1, 199, 0.4);
 }
